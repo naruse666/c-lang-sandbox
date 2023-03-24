@@ -9,6 +9,8 @@ int main(){
     return 1;
   }
 
+  printf("%s \n", myfgets(fd));
+
   char buf[10];
   int rd = read(fd, buf, 9);
   if ( rd == -1){

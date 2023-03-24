@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+/*
+ *  no arg is Error??
+*/
 int	check_input(int argc, char **argv)
 {
 	while (*argv)
@@ -33,11 +36,11 @@ int	check_input(int argc, char **argv)
 
 int check_mode()
 {
+	return 0;
 }
 
 
 int main(int argc, char *argv[]){
-	printf("*argv = %s\n", *argv);
-	check_input(argc, argv);
+	printf("%d \n", check_input(argc, argv));
 }
 
